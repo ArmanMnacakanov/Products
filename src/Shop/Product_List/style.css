@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ProductInfo_Box {
+  width: 100%;
+  height: auto;
+  padding: 100px 40px;
+}
+.ProductInfo_Box .Product_Info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  animation: show 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .ProductInfo_Box .Product_Info {
+    flex-direction: column;
+  }
+}
+.ProductInfo_Box .Product_Info > div {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .ProductInfo_Box .Product_Info > div {
+    align-items: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .ProductInfo_Box .Product_Info > div:first-child {
+    height: 300px;
+  }
+}
+.ProductInfo_Box .Product_Info > div img {
+  filter: drop-shadow(0 25px 20px rgba(0, 0, 0, 0.72));
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ProductInfo_Box .Product_Info > div div {
+  margin-top: 10px;
+  opacity: 0;
+  animation: show2 0.4s ease-in-out forwards;
+  border-radius: 30px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.199);
+  padding: 20px;
+}
+.ProductInfo_Box .Product_Info > div div:first-child {
+  animation-delay: 0.1s;
+}
+.ProductInfo_Box .Product_Info > div div:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.ProductInfo_Box .Product_Info > div div:last-child {
+  animation-delay: 0.35s;
+}
+@keyframes show2 {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.ProductInfo_Box .Product_Info > div div h3 {
+  color: rgba(0, 0, 0, 0.649);
+}
+.ProductInfo_Box .Product_Info > div div span {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.ProductInfo_Box .Product_Info > div div p {
+  color: rgba(0, 0, 0, 0.649);
+  font-weight: 600;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

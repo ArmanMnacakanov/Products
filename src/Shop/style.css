@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.highlighted {
+  padding: 10px;
+  background-color: red;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.Product_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Product_Box a {
+  text-decoration: none;
+}
+.Product_Box .Product {
+  width: 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.329);
+  padding: 20px;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+.Product_Box .Product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.509);
+}
+.Product_Box .Product:hover .Product_Info a {
+  background-color: rgb(52, 52, 52);
+}
+.Product_Box .Product > div {
+  margin: 10px;
+}
+.Product_Box .Product .Product_Img {
+  width: 100%;
+  height: 250px;
+}
+.Product_Box .Product .Product_Img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Product_Box .Product .Product_Info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.Product_Box .Product .Product_Info div {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.Product_Box .Product .Product_Info div:last-child {
+  position: absolute;
+  top: 130%;
+}
+.Product_Box .Product .Product_Info div h2 {
+  color: rgba(0, 0, 0, 0.757);
+}
+.Product_Box .Product .Product_Info div span {
+  font-weight: 600;
+  color: black;
+}
+.Product_Box .Product .Product_Info div a {
+  color: orange;
+  text-decoration: none;
+  background-color: rgb(40, 39, 39);
+  position: absolute;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}/*# sourceMappingURL=style.css.map */
